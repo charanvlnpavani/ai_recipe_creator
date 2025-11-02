@@ -1,10 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(
-    135deg,
-    #a8e063,
-    #56ab2f
-  ); /* change this line for different theme */
+  /* change this line for different theme */
   min-height: 100vh;
   margin: 0;
   display: flex;
@@ -13,7 +9,7 @@ body {
 
 /* 🌿 Navbar */
 .navbar {
-  background: linear-gradient(90deg, #56ab2f, #a8e063);
+  /* background: linear-gradient(90deg, #56ab2f, #a8e063); */
 }
 
 .navbar-brand {
@@ -141,9 +137,11 @@ textarea.form-control:focus {
 }
 
 .output-container {
-  max-height: 20%;
+  /* allow the output panel to grow and scroll on smaller screens */
+  max-height: 60vh;
   overflow-y: auto;
-  border: 2px solid #ddd;
+  border: 1px solid #e9ecef;
+  background: #fff;
 }
 
 /* Small devices (tablets) */
@@ -206,4 +204,16 @@ pre {
   font-family: "Poppins", sans-serif;
   color: #333;
   line-height: 1.6;
+}
+
+/* Responsive utilities specific to this page */
+.btn-responsive {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .btn-responsive {
+    width: auto;
+    padding: 10px 28px;
+  }
 }
