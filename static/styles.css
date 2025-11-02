@@ -140,6 +140,12 @@ textarea.form-control:focus {
   }
 }
 
+.output-container {
+  max-height: 20%;
+  overflow-y: auto;
+  border: 2px solid #ddd;
+}
+
 /* Small devices (tablets) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .card {
